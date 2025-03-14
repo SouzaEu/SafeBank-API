@@ -1,4 +1,4 @@
-package br.com.fiap.Bank_API.controller;
+package br.com.fiap.Bank_api.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
     @GetMapping
     public String index () {
-        return "Nome: Vinícius Souza Carvalho // rm: 556089 // Gabriel Duarte // Rm556972 // turma: 2tdspk";
+        return "Bank API - Digital Banking System\n" +
+               "Nome: Vinícius Souza Carvalho // rm: 556089 // Gabriel Duarte // Rm556972 // turma: 2tdspk";
     }
 }
