@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
     @GetMapping
     public String index () {
-        return "Nome: Vinícius Souza Carvalho // rm: 556089 // turma: 2tdspk";
+        return "Nome: Vinícius Souza Carvalho // rm: 556089 // Gabriel Duarte // Rm556972 // turma: 2tdspk";
     }
 }
