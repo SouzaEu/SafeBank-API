@@ -6,12 +6,12 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.4.3</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>br.com.fiap</groupId>
-    <artifactId>Bank-api</artifactId>
+    <artifactId>BankAPI</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Bank-api</name>
+    <name>BankAPI</name>
     <description>Demo project for Spring Boot</description>
     <url/>
     <licenses>

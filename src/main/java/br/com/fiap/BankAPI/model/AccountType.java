@@ -1,4 +1,4 @@
-package br.com.fiap.Bank_api.model;
+package br.com.fiap.BankAPI.model;
 
 public enum AccountType {
     CORRENTE,

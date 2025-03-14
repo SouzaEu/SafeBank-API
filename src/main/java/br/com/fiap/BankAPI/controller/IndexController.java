@@ -1,4 +1,4 @@
-package br.com.fiap.Bank_api.controller;
+package br.com.fiap.BankAPI.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;

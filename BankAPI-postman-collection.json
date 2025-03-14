@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "1582947f-fef6-4d72-924d-959027db3ba8",
+		"name": "BankAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Conta",
+			"item": [
+				{
+					"name": "Listar Contas",
+					"request": { "method": "GET", "url": "http://localhost:8080/conta" }
+				},
+				{
+					"name": "Buscar Conta por ID",
+					"request": { "method": "GET", "url": "http://localhost:8080/conta/id/1" }
+				},
+				{
+					"name": "Buscar Conta por CPF",
+					"request": { "method": "GET", "url": "http://localhost:8080/conta/cpf/123456789-10" }
+				},
+				{
+					"name": "Criar Conta",
+					"request": {
+						"method": "POST",
+						"url": "http://localhost:8080/conta",
+						"header": [{ "key": "Content-Type", "value": "application/json" }],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"numero\": 1, \"agencia\": 440, \"nomeTitular\": \"Saes\", \"cpf\": \"123456789-10\", \"saldo\": 0, \"tipo\": \"CORRENTE\" }"
+						}
+					}
+				},
+				{
+					"name": "Depósito",
+					"request": {
+						"method": "PATCH",
+						"url": "http://localhost:8080/conta/deposit",
+						"header": [{ "key": "Content-Type", "value": "application/json" }],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"id\": 1, \"value\": 100.0 }"
+						}
+					}
+				},
+				{
+					"name": "Saque",
+					"request": {
+						"method": "PATCH",
+						"url": "http://localhost:8080/conta/withdraw",
+						"header": [{ "key": "Content-Type", "value": "application/json" }],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"id\": 1, \"value\": 50.0 }"
+						}
+					}
+				},
+				{
+					"name": "Transferência (Pix)",
+					"request": {
+						"method": "PATCH",
+						"url": "http://localhost:8080/conta/transfer",
+						"header": [{ "key": "Content-Type", "value": "application/json" }],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"idOrigin\": 1, \"idDestiny\": 2, \"value\": 20.0 }"
+						}
+					}
+				},
+				{
+					"name": "Encerrar Conta",
+					"request": {
+						"method": "DELETE",
+						"url": "http://localhost:8080/conta/1"
+					}
+				}
+			]
+		}
+	]
+}

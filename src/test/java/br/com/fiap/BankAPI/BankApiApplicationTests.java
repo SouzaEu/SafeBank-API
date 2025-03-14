@@ -1,4 +1,4 @@
-package br.com.fiap.Bank_api;
+package br.com.fiap.BankAPI;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
