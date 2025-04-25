@@ -1,4 +1,4 @@
-# Bank API - WebAPI em Java
+# SafeBank API - WebAPI em Java
 
 ## Sobre o Projeto
 Este projeto é uma WebAPI desenvolvida em Java com Spring Boot para gerenciamento de contas bancárias. Ele implementa um CRUD utilizando banco de dados Oracle e segue boas práticas de arquitetura como DDD, MappingConfig, Migrations e Scaffolding. A documentação da API é gerada automaticamente com Swagger.
@@ -37,7 +37,7 @@ Este projeto é uma WebAPI desenvolvida em Java com Spring Boot para gerenciamen
 ## Como Executar
 1. Clone o repositório:
    ```sh
-   git clone <https://github.com/SouzaEu/Bank-API>
+   git clone <https://github.com/SouzaEu/SafeBank-API>
    ```
 2. Configure a string de conexão com o Oracle no `application.yml`
 3. Compile o projeto:
